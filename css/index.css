@@ -1,19 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    
-}
-#text-canva{
+
+#button{
     color: black;
 }
-#dropdown{
-    background: #fff;
-    border: none;
-}
-#close{
-    background: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-    color: #fff;
-};
-#h5-canva{
-    color: #fff;
+#logo{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
 }

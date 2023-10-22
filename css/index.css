@@ -10,3 +10,10 @@
     background: #fff;
     border: none;
 }
+#close{
+    background: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    color: #fff;
+};
+#h5-canva{
+    color: #fff;
+}

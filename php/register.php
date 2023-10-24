@@ -1,6 +1,6 @@
 <?php
-if (isset($_POST['username']) && isset($_POST['password'])) {
-    $username = $_POST['username'];
+if (isset($_POST['userEmail']) && isset($_POST['password'])) {
+    $username = $_POST['userEmail'];
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
     // Verifica se o arquivo 'users.txt' existe
@@ -13,12 +13,12 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     }
 
     // Adiciona o novo usuário ao array
-    $newUser = ["username" => $username, "password" => $password];
+    $newUser = ["userEmail" => $username, "password" => $password];
     $users[] = $newUser;
 
     // Codifica o array como JSON e o escreve de volta no arquivo
     file_put_contents('users.txt', json_encode($users));
 
-    header("Location: /pag/login.html");
+    header("Location: login.html");
 }
 ?>

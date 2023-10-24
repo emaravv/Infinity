@@ -3,15 +3,16 @@ session_start();
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    
 
-    // Ler os dados de usuários do arquivo .txt
-    $users = file("users.txt", FILE_IGNORE_NEW_LINES);
+    $users = json_decode(file_get_contents('users.txt'), true);
 
-    foreach ($users as $user_json) {
-        $user_data = json_decode($user_json, true);
+    
+    
 
-        if ($username === $user_data['username'] && password_verify($password, $user_data['password'])) {
+    foreach ($users as $user) {
+        if ($username === $user['username'] && password_verify($password, $user['password'])) {
             $_SESSION['username'] = $username;
             header("Location: success.php");
             exit();
@@ -20,4 +21,3 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
     header("Location: failure.php");
 }
-?>

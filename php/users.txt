@@ -1,1 +1,0 @@
-[{"username":"ola","password":"$2y$10$CFLoNVzhBcANovz7id\/WJOhSK171hUIiggTn24F\/XRJykqa5YxPOa"}]

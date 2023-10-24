@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Login bem-sucedido</h2>
-    <p>Bem-vindo, <?php echo $_SESSION['username']; ?></p>
+    <p>Bem-vindo, <?php echo $_SESSION['userEmail']; ?></p>
     <a href="logout.php">Sair</a>
 </body>
 </html>

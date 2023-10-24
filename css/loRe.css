@@ -14,9 +14,10 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 100%;
+    width: 100%; /* Largura máxima */
+    max-width: 400px; /* Define a largura máxima para evitar que fique muito pequeno */
     text-align: center;
-    width: 300px; /* Largura máxima */
+    margin: 10px; /* Adicione alguma margem para afastar do lado da tela */
 }
 
 /* Estilos para o título e o formulário */

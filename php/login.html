@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cadastro</title>
-     <style>
+    <title>Login</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -10,7 +10,7 @@
             padding: 0;
         }
 
-        .register-container {
+        .container {
             width: 100%;
             max-width: 400px;
             margin: 20px auto;
@@ -56,25 +56,23 @@
 
         /* Media Query para telas menores (ex: smartphones) */
         @media (max-width: 768px) {
-            .register-container {
+            .container {
                 max-width: 100%;
             }
         }
-
-     </style>
+    </style>
 </head>
 <body>
-    <div class="register-container">
-        <h2>Cadastro</h2>
-        <form action="/php/register.php" method="post">
+    <div class="container">
+        <h2>Entrar</h2>
+        <form action="auth.php" method="post">
             <label for="username">Nome de Usuario:</label>
             <input type="text" name="username" required><br>
             <label for="password">Senha:</label>
             <input type="password" name="password" required><br>
-            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Login">
         </form>
-        <p>Ja tem uma conta? <a href="/php/login.html">Faca login</a></p>
+        <p>Não tem uma conta? <a href="/pag/register.html">Cadastre-se aqui</a></p>
     </div>
-    
 </body>
 </html>

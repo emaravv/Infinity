@@ -57,6 +57,19 @@ input[type="submit"]:hover {
     background: rgba(33,37,41,0.5);
 }
 
+input[type="button"] {
+    background: rgb(116, 119, 121);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background: rgba(116, 119, 121,0.5);
+}
+
 /* Estilos para o link de "Faça login" */
 p {
     margin: 10px 0;
@@ -69,4 +82,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+#login{
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }

@@ -1,0 +1,1 @@
+Um site no formato de blog/wiki com funcionalidades de pequisa, login e pesquisa

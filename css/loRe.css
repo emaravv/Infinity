@@ -14,9 +14,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 500px;
-    width: 90%;
+    max-width: 100%;
     text-align: center;
+    width: 300px; /* Largura máxima */
 }
 
 /* Estilos para o título e o formulário */
@@ -45,19 +45,21 @@ input {
 }
 
 /* Estilo para o botão de cadastrar */
-input[type="submit"],
-input[type="button"] {
-    background: rgb(33, 37, 41);
+input[type="submit"], input[type="button"] {
+    background: rgb(33,37,41);
     color: #fff;
     font-weight: bold;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
 }
 
-input[type="submit"]:hover,
-input[type="button"]:hover {
-    background: rgba(33, 37, 41, 0.5);
+input[type="submit"]:hover, input[type="button"]:hover {
+    background: rgba(33,37,41,0.5);
 }
 
 /* Estilos para o link de "Faça login" */
@@ -74,9 +76,11 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Estilo para a bolinha verde */
 #login {
     background: red;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Use 50% para torná-lo uma bolinha perfeita */
+    margin: 10px auto; /* Centralizar horizontalmente */
 }
